@@ -19,7 +19,7 @@ public final class HomeFragment extends Fragment {
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         final View coordiatorLayout = view.findViewById(R.id.coordinator_layout);
-        view.findViewById(R.id.show_toast).setOnClickListener(new View.OnClickListener() {
+        view.findViewById(R.id.floating_action_button).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 final Snackbar snackbar = Snackbar.make(coordiatorLayout, "This is a snackbar not toast", Snackbar.LENGTH_INDEFINITE);
