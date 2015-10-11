@@ -12,6 +12,9 @@ public final class TriplePageAdapter extends FragmentPagerAdapter {
 
     @Override
     public Fragment getItem(int position) {
+        if (position == 1) {
+            return new SecondPageFragment();
+        }
         return new FirstPageFragment();
     }
 
