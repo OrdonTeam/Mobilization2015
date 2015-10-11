@@ -2,6 +2,7 @@ package com.mobilization.second;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
@@ -21,5 +22,8 @@ public final class SecondFragment extends Fragment {
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         ViewPager pager = (ViewPager) view.findViewById(R.id.view_pager);
         pager.setAdapter(new TriplePageAdapter(getFragmentManager()));
+
+        TabLayout tabLayout = (TabLayout) view.findViewById(R.id.tab_layout);
+        tabLayout.setupWithViewPager(pager);
     }
 }
