@@ -15,7 +15,6 @@
 
     <TextView
         android:id="@+id/list_item_text"
-        android:drawableStart="@drawable/circle1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="8dp"
