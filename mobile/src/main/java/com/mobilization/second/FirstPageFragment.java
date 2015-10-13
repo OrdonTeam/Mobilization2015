@@ -24,6 +24,6 @@ public final class FirstPageFragment extends Fragment {
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         RecyclerView recycler = (RecyclerView) view.findViewById(R.id.list);
         recycler.setLayoutManager(new LinearLayoutManager(getContext()));
-//        recycler.setAdapter(new LongLongAdapter());
+        recycler.setAdapter(new LongLongAdapter());
     }
 }
