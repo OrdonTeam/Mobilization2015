@@ -3,14 +3,12 @@ package com.mobilization.second;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.mobilization.list.LongLongAdapter;
 import com.mobilization.R;
+import com.mobilization.list.ListInitializer;
 
 public final class FirstPageFragment extends Fragment {
 
@@ -22,8 +20,6 @@ public final class FirstPageFragment extends Fragment {
 
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
-        RecyclerView recycler = (RecyclerView) view.findViewById(R.id.list);
-        recycler.setLayoutManager(new LinearLayoutManager(getContext()));
-        recycler.setAdapter(new LongLongAdapter());
+        ListInitializer.initList(getContext(), view);
     }
 }

@@ -6,14 +6,16 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.mobilization.R;
-import com.mobilization.list.ViewAdapter;
-import com.mobilization.list.ViewHolder;
 
 import java.util.List;
 
-public final class LongLongAdapter extends RecyclerView.Adapter {
+public final class ListAdapter extends RecyclerView.Adapter {
 
-    List<ViewAdapter> adapters = ViewAdapter.longRandomList();
+    List<ViewAdapter> adapters;
+
+    public ListAdapter(List<ViewAdapter> adapters) {
+        this.adapters = adapters;
+    }
 
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {

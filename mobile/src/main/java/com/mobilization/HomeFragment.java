@@ -5,14 +5,12 @@ import android.support.annotation.Nullable;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.mobilization.list.LongLongAdapter;
+import com.mobilization.list.ListInitializer;
 
 public final class HomeFragment extends Fragment {
 
@@ -45,8 +43,6 @@ public final class HomeFragment extends Fragment {
             }
         });
 
-        RecyclerView recycler = (RecyclerView) view.findViewById(R.id.list);
-        recycler.setLayoutManager(new LinearLayoutManager(getContext()));
-        recycler.setAdapter(new LongLongAdapter());
+        ListInitializer.initList(getContext(), view);
     }
 }
