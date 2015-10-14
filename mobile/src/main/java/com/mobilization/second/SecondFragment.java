@@ -25,8 +25,5 @@ public final class SecondFragment extends Fragment {
 
         ViewPager pager = (ViewPager) view.findViewById(R.id.view_pager);
         pager.setAdapter(new TreePagesAdapter(getFragmentManager()));
-
-        TabLayout tabLayout = (TabLayout) view.findViewById(R.id.tab_layout);
-        tabLayout.setupWithViewPager(pager);
     }
 }
