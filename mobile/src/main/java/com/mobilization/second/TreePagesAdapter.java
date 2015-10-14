@@ -4,12 +4,12 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
-public final class TriplePageAdapter extends FragmentPagerAdapter {
+public final class TreePagesAdapter extends FragmentPagerAdapter {
 
-    Fragment[] fragments = {new FirstPageFragment(), new SecondPageFragment(), new FirstPageFragment()};
+    Fragment[] fragments = {new ViewPagerFirstPageFragment(), new ViewPagerSecondPageFragment(), new ViewPagerFirstPageFragment()};
     String[] titles = {"First", "Second", "Third"};
 
-    public TriplePageAdapter(FragmentManager fragmentManager) {
+    public TreePagesAdapter(FragmentManager fragmentManager) {
         super(fragmentManager);
     }
 

@@ -11,12 +11,12 @@ import android.widget.TextView;
 
 import com.mobilization.R;
 
-public final class SecondPageFragment extends Fragment {
+public final class ViewPagerSecondPageFragment extends Fragment {
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.second_page_fragment, container, false);
+        return inflater.inflate(R.layout.view_pager_second_page_fragment, container, false);
     }
 
     @Override

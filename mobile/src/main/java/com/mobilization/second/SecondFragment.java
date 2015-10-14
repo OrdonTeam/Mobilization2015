@@ -23,7 +23,7 @@ public final class SecondFragment extends Fragment {
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         ViewPager pager = (ViewPager) view.findViewById(R.id.view_pager);
-        pager.setAdapter(new TriplePageAdapter(getFragmentManager()));
+        pager.setAdapter(new TreePagesAdapter(getFragmentManager()));
 
         Toolbar toolbar = (Toolbar) view.findViewById(R.id.toolbar);
         ((AppCompatActivity) getActivity()).setSupportActionBar(toolbar);

@@ -10,12 +10,12 @@ import android.view.ViewGroup;
 import com.mobilization.R;
 import com.mobilization.list.ListInitializer;
 
-public final class FirstPageFragment extends Fragment {
+public final class ViewPagerFirstPageFragment extends Fragment {
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.first_page_fragment, container, false);
+        return inflater.inflate(R.layout.view_pager_first_page_fragment, container, false);
     }
 
     @Override
