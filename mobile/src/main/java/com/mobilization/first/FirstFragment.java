@@ -13,7 +13,7 @@ import android.view.ViewGroup;
 import com.mobilization.R;
 import com.mobilization.list.ListInitializer;
 
-public final class HomeFragment extends Fragment {
+public final class FirstFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
