@@ -2,12 +2,11 @@ package com.mobilization.second;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.design.widget.TextInputLayout;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
+import android.widget.EditText;
 
 import com.mobilization.R;
 
@@ -21,16 +20,15 @@ public final class ViewPagerSecondPageFragment extends Fragment {
 
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
-        TextView firstName = (TextView) view.findViewById(R.id.first_name);
-        final TextInputLayout firstNameLayout = (TextInputLayout) view.findViewById(R.id.first_name_layout);
+        final EditText firstName = (EditText) view.findViewById(R.id.first_name);
         firstName.setOnFocusChangeListener(new View.OnFocusChangeListener() {
             @Override
-            public void onFocusChange(View firstName, boolean hasFocus) {
+            public void onFocusChange(View view, boolean hasFocus) {
                 if (hasFocus) {
-                    firstNameLayout.setError(null);
+                    firstName.setError(null);
                 } else {
-                    if (((TextView) firstName).getText().length() == 0) {
-                        firstNameLayout.setError("First name cannot be empty");
+                    if (firstName.getText().length() == 0) {
+                        firstName.setError("First name cannot be empty");
                     }
                 }
             }
