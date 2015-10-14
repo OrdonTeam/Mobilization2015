@@ -1,6 +1,8 @@
-package com.mobilization;
+package com.mobilization.list;
 
 import android.support.annotation.DrawableRes;
+
+import com.mobilization.R;
 
 import java.util.ArrayList;
 import java.util.Arrays;

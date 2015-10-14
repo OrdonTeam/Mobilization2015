@@ -9,7 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.mobilization.LongLongAdapter;
+import com.mobilization.list.LongLongAdapter;
 import com.mobilization.R;
 
 public final class FirstPageFragment extends Fragment {

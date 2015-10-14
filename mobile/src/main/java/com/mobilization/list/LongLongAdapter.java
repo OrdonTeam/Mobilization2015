@@ -1,9 +1,13 @@
-package com.mobilization;
+package com.mobilization.list;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import com.mobilization.R;
+import com.mobilization.list.ViewAdapter;
+import com.mobilization.list.ViewHolder;
 
 import java.util.List;
 
