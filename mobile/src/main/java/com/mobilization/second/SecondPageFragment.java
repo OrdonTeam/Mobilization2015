@@ -23,7 +23,6 @@ public final class SecondPageFragment extends Fragment {
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         TextView firstName = (TextView) view.findViewById(R.id.first_name);
         final TextInputLayout firstNameLayout = (TextInputLayout) view.findViewById(R.id.first_name_layout);
-        firstNameLayout.setErrorEnabled(true);
         firstName.setOnFocusChangeListener(new View.OnFocusChangeListener() {
             @Override
             public void onFocusChange(View firstName, boolean hasFocus) {
