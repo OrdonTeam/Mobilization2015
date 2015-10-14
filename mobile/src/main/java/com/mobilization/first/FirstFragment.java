@@ -6,6 +6,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import com.mobilization.R;
 import com.mobilization.dummy.StandardToolbarInitializer;
@@ -23,5 +24,6 @@ public final class FirstFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
         StandardToolbarInitializer.initToolbar(getActivity(), view);
         ListInitializer.initList(getContext(), view);
+        Toast.makeText(getActivity(), "Just toast", Toast.LENGTH_LONG).show();
     }
 }
