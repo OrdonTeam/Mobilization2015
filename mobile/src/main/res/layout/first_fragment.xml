@@ -51,5 +51,6 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
         android:layout_margin="16dp"
+        app:backgroundTint="@color/red"
         app:fabSize="normal"/>
 </android.support.design.widget.CoordinatorLayout>
