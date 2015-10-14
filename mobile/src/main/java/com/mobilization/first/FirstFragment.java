@@ -24,21 +24,5 @@ public final class FirstFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
         StandardToolbarInitializer.initToolbar(getActivity(), view);
         ListInitializer.initList(getContext(), view);
-
-        final View coordiatorLayout = view.findViewById(R.id.coordinator_layout);
-        view.findViewById(R.id.floating_action_button).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                final Snackbar snackbar = Snackbar.make(coordiatorLayout, "This is a snackbar not toast", Snackbar.LENGTH_INDEFINITE);
-                snackbar.setAction("DELETE", new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        snackbar.dismiss();
-                    }
-                });
-                snackbar.show();
-            }
-        });
-
     }
 }

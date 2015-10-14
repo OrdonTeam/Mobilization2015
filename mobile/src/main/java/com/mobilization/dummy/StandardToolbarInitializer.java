@@ -15,7 +15,9 @@ public final class StandardToolbarInitializer {
 
     private static void initToolbar(AppCompatActivity appCompatActivity, View view) {
         Toolbar toolbar = (Toolbar) view.findViewById(R.id.toolbar);
-        appCompatActivity.setSupportActionBar(toolbar);
-        appCompatActivity.getSupportActionBar().setTitle("Just a nice title");
+        if (toolbar != null) {
+            appCompatActivity.setSupportActionBar(toolbar);
+            appCompatActivity.getSupportActionBar().setTitle("Just a nice title");
+        }
     }
 }
