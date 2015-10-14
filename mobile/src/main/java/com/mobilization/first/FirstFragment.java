@@ -2,11 +2,11 @@ package com.mobilization.first;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Toast;
 
 import com.mobilization.R;
 import com.mobilization.dummy.StandardToolbarInitializer;
@@ -24,6 +24,6 @@ public final class FirstFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
         StandardToolbarInitializer.initToolbar(getActivity(), view);
         ListInitializer.initList(getContext(), view);
-        Toast.makeText(getActivity(), "Just toast", Toast.LENGTH_LONG).show();
+        Snackbar.make(view, "It is snackbar", Snackbar.LENGTH_LONG).show();
     }
 }
