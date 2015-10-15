@@ -4,4 +4,7 @@
     <color name="primary_dark">#040404</color>
     <color name="red">#dc433b</color>
     <color name="white">#ffffff</color>
+    <color name="window_background">#e9f1ad</color>
+    <color name="hint">#79813d</color>
+    <color name="control_activated">#040404</color>
 </resources>
