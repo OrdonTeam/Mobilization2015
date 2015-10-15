@@ -2,6 +2,7 @@ package com.mobilization.first;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -23,5 +24,12 @@ public final class FirstFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
         StandardToolbarInitializer.initToolbar(getActivity(), view);
         ListInitializer.initList(getContext(), view);
+
+        Snackbar.make(view, "Snackbar", Snackbar.LENGTH_INDEFINITE).setAction("UNDO", new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        }).show();
     }
 }
